@@ -1,0 +1,115 @@
+@import url(./font.css);
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    background: hsl(0, 0%, 98%);
+}
+
+header {
+    max-width: 500px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+h1 {
+    font-weight: 200;
+    margin: 0;
+}
+
+h1 span {
+    font-weight: 600;
+}
+
+p {
+    color: hsl(229, 6%, 66%);
+}
+
+
+.container {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1140px;
+}
+
+.box {
+    background-color: #fff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+    justify-content: center;
+    border-radius: 5px;
+    padding: 30px;
+    margin: 15px;
+    padding: 30px;
+    width: 350px;
+}
+
+.box-cyan {
+    border-top: 3px solid hsl(180, 62%, 55%);
+}
+
+.box-red{
+    border-top: 3px solid hsl(0, 78%, 62%);
+}
+.box-orange {
+    border-top: 3px solid hsl(34, 97%, 64%);
+}
+.box-blue {
+    border-top: 3px solid hsl(212, 86%, 64%);
+}
+
+.box-push {
+    transform: translateY(50%);
+}
+
+.box h2 {
+    margin: 0;
+}
+
+.box p {
+    font-size: 14px;
+    margin: 15px 0 40px;
+}
+
+.box img {
+    display: block;
+    margin-left: auto;
+}
+
+footer {
+    text-align: center;
+}
+
+@media (max-width: 775px) {
+    .box-push {
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 1139px) {
+    .container {
+        margin-bottom: 130px;
+    }
+}
+
+@media (max-width: 375px) {
+    h1 {
+        font-size: 30px;
+        font-weight: 200;
+        margin: 0;
+    }
+    
+    h1 span {
+        font-weight: 600;
+    }
+
+    .container {
+        margin-bottom: 20px;
+    }
+}
